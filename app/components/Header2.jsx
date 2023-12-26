@@ -19,7 +19,7 @@ export default function Header2() {
         <div className='px-16 max-w-7xl mx-auto flex bg-gray-100/40 py-3 justify-between'>
             {
                 List.map((elem, id) => (
-                    <span key={id} >{elem.name}</span>
+                    <span key={id} className='cursor-pointer' >{elem.name}</span>
                 ))
             }
         </div>
