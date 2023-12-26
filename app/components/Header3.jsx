@@ -12,7 +12,7 @@ export default function Header3() {
                     <button className='col-span-1 h-12 outline-none text-lg py-2 px-3 bg-green-500 hover:cursor-pointer hover:bg-green-600 text-white'>Search</button>
                 </div>
                 <div className='flex mx-20 my-5 font-bold'>
-                    <button className=' h-12 outline-none text-lg py-2 px-3 hover:cursor-pointer mr-5 text-white'>Contineu Your Search</button>
+                    <button className=' h-12 outline-none text-lg py-2 px-3 hover:cursor-pointer mr-5 text-white'>Continue Your Search</button>
                     <button className='border border-gray-100 h-12 outline-none text-lg py-2 px-3 hover:cursor-pointer mr-5 text-white hover:bg-gray-600 rounded-lg'>Home Stay in India</button>
 
                 </div>

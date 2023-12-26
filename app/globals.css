@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+.login-page{
+  background: linear-gradient(#0000, #000), url('../public/sign-in-img.avif');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
