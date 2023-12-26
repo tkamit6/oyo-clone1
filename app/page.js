@@ -15,10 +15,10 @@ export default function Home() {
       <Header2 />
       <Header3 />
       <div className=' my-14 max-w-7xl mx-auto'>
-        <Image src={'/banner.avif'} quality={100} draggable='false' alt='img' width={500} height={500} className='w-full' />
+        <Image src={'/banner.avif'} quality={100} draggable='false' alt='img' width={1000} height={1000} className='w-full' />
       </div>
       <div className='my-14 max-w-7xl mx-auto'>
-        <Image src={'/banner1.avif'} quality={100} alt='img' width={500} height={500} className='w-full' />
+        <Image src={'/banner1.avif'} quality={100} alt='img' width={1000} height={1000} className='w-full' />
       </div>
       <Header4 />
       <Footer />
