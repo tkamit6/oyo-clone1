@@ -3,11 +3,19 @@ import React from 'react'
 import Block from './Block'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import Cookies from 'js-cookie'
 
 export default function Header1() {
+    
+    let auth;
+    if (typeof window !== 'undefined' || typeof window !== null) {
+        auth = Cookies.get('oyouser')
+        console.log(auth);
+    }
+    
     // const router = useRouter();
     return (
-        <div className='flex sticky top-0 bg-white h-16 px-10 items-center justify-between border-b-2 border-gray-300'>
+        <div className='flex  sticky top-0 bg-white h-16 px-10 items-center justify-between border-b-2 border-gray-300'>
             <Link href='/' >
                 <Image src='/logo.webp' alt='logo' width={100} height={100} className='w-24 h-20 object-contain' />
             </Link>
@@ -17,7 +25,10 @@ export default function Header1() {
                 <Block title={'List your properties'} para={'Start earning in 30 min'} />
                 <Block title={'97979797979'} para={'Call us to book now'} />
                 <div className='flex items-center px-4'>
-                    <h3 className='font-bold'><Link href='/login'> Login / Sign up </Link></h3>
+                    <h3 className='font-bold'><Link href='/login'>
+                        {
+                            auth ? 'Log out' : 'Login / Sign up'
+                        }  </Link></h3>
                 </div>
             </div>
         </div>

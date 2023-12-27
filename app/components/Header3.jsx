@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function Header3() {
@@ -9,7 +10,7 @@ export default function Header3() {
                     <input type='text' placeholder='Search...' className='outline-none px-3 h-12 text-lg border-r-2 border-gray-400 col-span-2' />
                     <input type='text' placeholder='Search...' className='outline-none px-3 h-12 text-lg border-r-2 border-gray-400 col-span-1' />
                     <input type='text' placeholder='Search...' className='outline-none px-3 h-12 text-lg border-r-2 border-gray-400 col-span-1' />
-                    <button className='col-span-1 h-12 outline-none text-lg py-2 px-3 bg-green-500 hover:cursor-pointer hover:bg-green-600 text-white'>Search</button>
+                    <button className='col-span-1 h-12 outline-none text-lg py-2 px-3 bg-green-500 hover:cursor-pointer hover:bg-green-600 text-white'><Link href='/hotels'> Search</Link></button>
                 </div>
                 <div className='flex mx-20 my-5 font-bold'>
                     <button className=' h-12 outline-none text-lg py-2 px-3 hover:cursor-pointer mr-5 text-white'>Continue Your Search</button>
